@@ -1,0 +1,39 @@
+<!-- file: register.html -->
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Formulir Pendaftaran</h2>
+    <form id="registerForm" action="proses.php" method="POST">
+        <label>Nama:</label>
+        <input type="text" name="nama" required><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" required><br>
+
+        <label>Konfirmasi Password:</label>
+        <input type="password" name="confirm_password" required><br>
+
+        <label>Tanggal Lahir:</label>
+        <input type="date" name="tanggal_lahir" required><br>
+
+        <label>
+            <input type="checkbox" name="persetujuan" id="persetujuan"> Saya menyetujui syarat dan ketentuan
+        </label><br><br>
+
+        <button type="submit">Daftar</button>
+    </form>
+
+    <script src="validasi.js"></script>
+</body>
+
+</html>
